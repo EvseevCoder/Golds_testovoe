@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="filter">
+        <p style="margin-right: 20px"><strong>Фильтрация по:</strong></p>
+        <button class="button button__active">Не фильтровать</button>
+        <button class="button">Названию</button>
+        <button class="button">Цена</button>
+        <button class="button">Бренду</button>
+      </div>
+      <input
+        class="input"
+        style="width: 200px; margin-left: auto; display: none"
+        type="text"
+      />
+      <button
+        style="width: 150px; margin: 10px; margin-left: auto"
+        class="button filter-button"
+      >
+        Применить фильтр
+      </button>
+
+      <div class="table">
+        <p>...загрузка</p>
+      </div>
+
+      <div class="settings">
+        <div class="pagination">
+          <button class="button prev">Prev</button>
+          <div class="nowPage">1</div>
+          <button class="button next">Next</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- <script src="dubles.js"></script> -->
+  </body>
+</html>

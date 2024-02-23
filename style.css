@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(252, 247, 242);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 50px auto;
+  flex-direction: column;
+
+  width: 700px;
+  min-height: 500px;
+  background-color: white;
+  border: 1px solid #acacac;
+}
+
+.filter {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: right;
+  gap: 1px;
+  height: 50px;
+  align-items: center;
+}
+
+.input {
+  display: block;
+}
+
+.button {
+  padding: 5px 10px;
+  border: 1px solid #0000007e;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button__active {
+  color: white;
+  background-color: rgb(96, 96, 226);
+}
+
+.button__passive {
+  color: grey;
+  background-color: rgb(226, 226, 226);
+}
+
+.table {
+  width: 100%;
+  min-height: 200px;
+  overflow-x: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.table_item {
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 12px 16px -8px rgba(34, 60, 80, 0.2);
+}
+
+.id {
+  color: #2020207e;
+  font-size: 11px;
+}
+
+.names {
+  display: flex;
+  gap: 18px;
+}
+
+.name {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.brand {
+  font-size: 22px;
+}
+
+.brand::after {
+  content: "»";
+}
+
+.brand::before {
+  content: "«";
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.price::after {
+  content: " ₽";
+}
+
+.settings {
+  margin-top: 20px;
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
