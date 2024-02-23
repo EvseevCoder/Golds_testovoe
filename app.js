@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
     table.innerHTML = "...загрузка";
 
     const maxRetries = 3; // Максимальное количество попыток повтора
-    const url = "https://api.valantis.store:40000/";
+    const url = "http://api.valantis.store:40000/";
 
     let requestData = null;
 
